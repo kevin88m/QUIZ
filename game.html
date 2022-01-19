@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series - Play</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="game.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+                <div id="nav">
+                    <div id="nav-item">
+                            <p id="progressText" class="nav-prefix">
+                               Question /
+                            </p>
+                            <div id="progressBar">
+                                <div id="progressBarFull"></div>
+                            </div>
+                            <!--je crée une progress bar-->
+                            <h1 class="nav-main-text" id ="questionCounter">
+                            
+                            </h1>
+                    </div>
+                    <div id="nav-item">
+                        <p class="nav-prefix">
+                           Score
+                        </p>
+                        <h1 class="nav-main-text" id="score">
+                            0
+                        </h1>
+                </div>
+                </div>
+            
+                <form autocomplete="off" >  
+                      
+                    
+                    <h2 id="question"></h2>  
+                    
+                    <div class="choice-container">
+                        <input type="checkbox" id="choice-prefix" data-filter="1" name="settings" unchecked  />
+                         <label for="choice-prefix" class="choice-text" data-number="1"><br>  
+                       
+                        </label>
+                    </div>
+                    <div class="choice-container">
+                        
+                        <input type="checkbox" id="choice-prefix"  data-filter="2" name="settings" unchecked   />
+                         <label for ="choice-prefix" class="choice-text" data-number="2"> <br>  
+                    </label>
+                    </div>
+                    <div class="choice-container">
+                        <input  type="checkbox" id="choice-prefix" data-filter="3"   name="settings" unchecked  />
+                         <label for="choice-prefix" class="choice-text" data-number="3"><br>  
+                            
+
+                        </label>
+                    </div>
+                    <div class="choice-container">
+                        <input  type="checkbox" id="choice-prefix"   data-filter="4" name="settings" unchecked  />
+                         <label for="choice-prefix" class="choice-text" data-number="4"><br>  
+                         </label>
+                           
+                         <div class="answer-description "></div>
+                       
+                       
+                    </div>
+                    
+                </form>  
+                
+            </div>
+        </div>
+     <script src="game.js" defer></script> 
+     
+</body>
+</html>

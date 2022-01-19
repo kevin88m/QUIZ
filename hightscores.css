@@ -1,0 +1,11 @@
+#highScoresList {
+    list-style: decimal-leading-zero;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+}
